@@ -1,0 +1,21 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  datasource:
+    url: jdbc:h2:file:~/h2/app_db;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+  jpa:
+    database: h2
+    hibernate:
+      ddl-auto: update
+
+    
+server:
+  port: 8090
+  
